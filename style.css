@@ -1,0 +1,244 @@
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background:url(images/black_leather_texture.jpg) repeat;
+}
+.wrapper{
+    width:100%;
+}
+.topnav{
+    background:url(images/topnavbg_02.gif) repeat-x;
+    height:25px;
+    border-bottom:20px solid #003993;
+    text-align:center;
+    font-size: 50px;
+    font-family: serif;
+    color: #808080 ;
+    padding-right:0%;
+    padding-top:8px;
+    width:100%;
+}
+body,td,th {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.bannerbg{
+    border-bottom:15px solid #030C13;
+    background:url(images/bannerbg_06.gif) repeat-x;
+    height:255px;
+    width:100%;
+}
+.subbannerbgleft{
+    background:url(images/subbannerbg_10.gif) repeat-x;
+    height:91px;
+    float:left;
+    width:24.9%;
+    border-right:1px solid #0041B1;
+}
+.subbannerbgright{
+    background:url(images/subbannerbg_10.gif) repeat-x;
+    height:91px;
+    float:left;
+    width:24.9%;
+    border-left:1px solid #0041B1;
+}
+.subbannerbgmiddle{
+    background:url(images/subbannerbgmiddle_10.gif) repeat-x;
+    height:91px;
+    float:left;
+    padding-top:0px;
+    width:48%;
+    text-align:center;
+    font-size: 15px;
+
+    font-family: serif;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:0px;
+}
+h1{
+    font-size:60px;
+    width:70%;
+    padding-left:20%;
+    text-align:center;
+}
+.content{
+    width:100%;
+}
+.leftcolumn{
+    width:253px;
+    float:left;
+    background-color:#232323;
+    border-right:#0A0A0A solid 2px;
+}
+.rightcolumn{
+    float:right;
+    width:47.9%;
+    text-align:left;
+    margin-right:25.8%;
+    background:#232323;
+    border-right:#0A0A0A solid 2px;
+    border-left:#0A0A0A solid 2px;
+}
+h2{
+    background:url(images/headingbg_13.gif) repeat-x;
+    width:100%;
+    text-align:center;
+    padding-top:11px;
+    padding-bottom:11px;
+    font-size:10px;
+    color:#fff;
+    margin:0;
+}
+.underh2{
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:10px;
+    padding-right:10px;
+    width:230px;
+    margin:0;
+}
+#navvy
+{
+    width: 100%;
+    margin:0;
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+}
+
+ul#navvylist
+{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul#navvylist li
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul#navvylist li a
+{
+    display: block;
+    width: 90%;
+    margin:0;
+    padding: 0.5em 0 0.5em 2em;
+    border-width: 1px;
+    border-color: #333 #0A0A0A #000 #333;
+    border-style: solid;
+    color: #ededed;
+    text-decoration: none;
+    background: none;
+}
+
+#navvy>ul#navvylist li a { width: auto; }
+
+ul#navvylist li#active a
+{
+    background: none;
+    color: #ededed;
+}
+
+ul#navvylist li a:hover, ul#navvylist li#active a:hover
+{
+    color: #fff;
+    background: #333;
+    border-color: #333 #0A0A0A #000 #333;
+}
+.mainheadingbg{
+    padding-left:3%;
+    padding-top:26px;
+    width:9%;
+    height:0px;
+
+}
+.date{
+    height:40px;
+    float:left;
+    width:42px;
+    background:url(images/datebg_19.gif) no-repeat;
+}
+.date1{
+    height:50px;
+    float:left;
+    width:68px;
+    background:url(images/Mail.png) no-repeat;
+}
+.month{
+    height:12px;
+    padding-top:6px;
+    color:#004ABA;
+    text-align:center;
+    font-weight:bold;
+    font-size:9px;
+    font-family:verdana;
+}
+.day{
+    height:5px;
+    padding-top:2px;
+    color:#0093DB;
+    text-align:center;
+    font-weight:bold;
+    font-size:9px;
+    font-family:verdana;
+}
+h3{
+    padding-left:0px;
+    float:left;
+    font-size:10px;
+}
+.writtencontent{
+    width:97%;
+    padding-left:10px;
+    padding-right:25px;
+    font-size: 15px;
+}
+.footer{
+    width:100%;
+    background:url(images/footerepeat_29.gif) repeat-x;
+    height:89px;
+    text-align:center;
+}
+.footerlogo{
+    width:100%;
+    margin:0;
+    background:url(images/footerimage_28.gif) center no-repeat;
+    padding-top:44px;
+    padding-bottom:32px;
+    font-size:11px;
+    text-align:center;
+}
+.clear {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 -1px;
+    clear: both;
+}
+a {
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
