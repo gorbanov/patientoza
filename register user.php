@@ -3,7 +3,10 @@
 require_once 'configs/config database.php';
 require_once 'smarty/configs/smarty config.php';
 
-
+$user      = $_POST["username"];
+$pass      = ($_POST["password"]);
+$conf_pass = ($_POST["conf_password"]);
+$email     = $_POST['email'];
 
 if (empty($user) || empty($pass) || empty($conf_pass) || empty($email)) {
     $smarty->display('field register.tpl');

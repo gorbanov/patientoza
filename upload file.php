@@ -6,7 +6,9 @@ require_once 'smarty/configs/smarty config.php';
 require_once 'configs/config database.php';
 
 
-if (in_array($_FILES["file"]["type"], $allowed) && ($_FILES["file"]["size"] < 2000000) && in_array($extension, $allowedExts)) {
+$file_name = $_FILES["file"]["name"];
+
+if (in_array($_FILES["file"]["type"], $allowed_file_extensions) && ($_FILES["file"]["size"] < 2000000) && in_array($extension, $allowedExtensions)) {
     if ($_FILES["file"]["error"] > 0) {
         echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
     } elseif (file_exists("Pics/" . $_FILES["file"]["name"])) {

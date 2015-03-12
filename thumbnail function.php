@@ -4,6 +4,8 @@ function createThumbnail($file_name) {
 
     require 'configs/config images.php';
 
+    $file_name = $_FILES["file"]["name"];
+
     if (preg_match('/[.](jpg)$/', $file_name)) {
         $im = imagecreatefromjpeg($path_to_image_directory . $file_name);
     } else if (preg_match('/[.](gif)$/', $file_name)) {

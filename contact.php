@@ -3,6 +3,10 @@
 require_once ('smarty/configs/smarty config.php');
 require_once ('configs/config email.php');
 
+$subject   = $_POST["subject"];
+$message   = $_POST["message"];
+$mailcheck = spamcheck($_POST["subject"]);
+
 function spamcheck($field) {
     $field = filter_var($field, FILTER_SANITIZE_EMAIL);
     if (filter_var($field, FILTER_VALIDATE_EMAIL)) {

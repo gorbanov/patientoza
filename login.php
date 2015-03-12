@@ -3,6 +3,8 @@
 require_once 'configs/config database.php';
 require_once 'smarty/configs/smarty config.php';
 
+$user = $_POST["username"];
+$pass = ($_POST["password"]);
 
 session_start();
 
