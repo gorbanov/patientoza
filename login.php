@@ -1,7 +1,7 @@
 <?php
 
-require_once 'configs/config database.php';
-require_once 'smarty/configs/smarty config.php';
+require_once 'configs/configDatabase.php';
+require_once 'smarty/configs/configSmarty.php';
 
 $user = $_POST["username"];
 $pass = ($_POST["password"]);
@@ -10,7 +10,7 @@ session_start();
 
 if (!isset($_POST['submit'])) {
     if (empty($user) || empty($pass)) {
-        header('Location: loginform required fields.php');
+        $smarty->display('loginFormRequiredFields.tpl');
     } else {
         $db_server = mysql_connect($db_hostname, $db_username, $db_password);
         if (!$db_server) {
@@ -26,9 +26,10 @@ if (!isset($_POST['submit'])) {
         $rows  = mysql_num_rows($query);
         if ($rows == 1) {
             $_SESSION['login_user'] = $user;
-            header('Location: profile.php');
+            $smarty->assign('user', $user);
+            $smarty->display('profile.tpl');
         } else {
-            header('Location: wrong name password.php');
+            $smarty->display('wrongNamePassword.tpl');
         }
         mysql_close($db_server);
     }

@@ -2,4 +2,4 @@
 
 require_once ('smarty/configs/configSmarty.php');
 
-$smarty->display('about.tpl');
+$smarty->display('loginForm.tpl');

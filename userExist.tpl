@@ -1,7 +1,7 @@
 {extends file="Layout.tpl"}
 {block name=body}
     <h3>Registraton</h3>
-    <center>
+    <center> User exist! <br /> Please choice diferent user name!
         <table align="center" border="0">
             <form action="registerUser.php" method="post">
                 <tr>
@@ -21,9 +21,8 @@
                 <tr>
                     <td valign="top">Email:</td>
                     <td><input type="email" name="email" /><br />
-                        <input type="submit" value="Register">
-                    </td>
+                        <input type="submit" value="Register"></td>
                 </tr>
-        </table><br />
+        </table>
     </center>
 {/block}

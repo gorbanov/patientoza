@@ -2,6 +2,6 @@
 {block name=body}
     <center>   
         <p> WELCOME </p>
-        <p> You may login <a href="loginform.php">here!</a></p><br />
+        <p> You may login <a href="loginForm.php">here!</a></p><br />
     </center>
 {/block}

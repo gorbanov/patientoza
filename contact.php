@@ -1,11 +1,11 @@
 <?php
 
-require_once ('smarty/configs/smarty config.php');
-require_once ('configs/config email.php');
+require_once ('smarty/configs/configSmarty.php');
+require_once ('configs/configEmail.php');
 
 $subject   = $_POST["subject"];
 $message   = $_POST["message"];
-$mailcheck = spamcheck($_POST["subject"]);
+$mailcheck = spamcheck($subject);
 
 function spamcheck($field) {
     $field = filter_var($field, FILTER_SANITIZE_EMAIL);
@@ -16,16 +16,19 @@ function spamcheck($field) {
     }
 }
 
-if (isset($_POST["subject"])) {
+if (isset($subject)) {
 
     if ($mailcheck == FALSE) {
-        header('Location: invalid input email.php');
+        $smarty->display('invalidInputEmail.tpl');
+        exit();
     } else {
 
         if (mail($to, $subject, $message)) {
-            header('Location: email success.php');
+            $smarty->display('emailSuccess.tpl');
+            exit();
         } else {
-            header('Location: failed email.php');
+            $smarty->display('failedEmail.tpl');
+            exit();
         }
     }
 }

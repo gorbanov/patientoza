@@ -1,10 +1,10 @@
 <?php
 
 //ini_set("display_errors", TRUE);
-require 'configs/config images.php';
-require 'thumbnail function.php';
-require_once 'smarty/configs/smarty config.php';
-require_once 'configs/config database.php';
+require 'configs/configImages.php';
+require 'thumbnailFunction.php';
+require_once 'smarty/configs/configSmarty.php';
+require_once 'configs/configDatabase.php';
 
 $db_server = mysql_connect($db_hostname, $db_username, $db_password);
 if (!$db_server)

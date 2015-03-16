@@ -1,6 +1,7 @@
 <?php
 
-require_once 'configs/config database.php';
+require_once 'smarty/configs/configSmarty.php';
+require_once 'configs/configDatabase.php';
 
 
 $db_server = mysql_connect($db_hostname, $db_username, $db_password);
@@ -15,5 +16,5 @@ $row           = mysql_fetch_assoc($ses_sql);
 $login_session = $row['user_name'];
 if (!isset($login_session)) {
     mysql_close($db_server);
-    header('Location: index.php');
 }
+$smarty->assign('user_check', $user_check);

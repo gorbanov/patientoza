@@ -1,7 +1,7 @@
 {extends file="Layout.tpl"}
 {block name=body}
     <center>
-        <b id="welcome">Welcome : {$user}{$user_check} <br /><br />
+        <b id="welcome">File  {$file_name}  is invalid! <br /><br />upload new file :<br /><br />
         </b>
     </center>
     <div class="writtencontent">
@@ -11,7 +11,6 @@
                 <label for="file">Filename:</label>
                 <input type="file" name="file" id="file">
                 <input type="submit" name="submit" value="Submit"><br /><br />
-        </form>
-    </center>
-</div>
+            </center>
+    </div>
 {/block}

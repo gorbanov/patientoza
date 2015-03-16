@@ -1,11 +1,10 @@
 <?php
 
-require_once ('smarty/configs/smarty config.php');
-
-include('login.php'); // Includes Login Script
+require_once ('smarty/configs/configSmarty.php');
+require_once 'session.php';
 
 if (isset($_SESSION['login_user'])) {
-    header("location: profile.php");
+    $smarty->display('profile.tpl');
 } else {
     $smarty->display('index.tpl');
 }
