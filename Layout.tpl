@@ -56,7 +56,7 @@
                 <div class="clear"></div>
             </div>
             <div class="footer">
-                <div class="footerlogo"><a href="loginForm.php">Login</a></div>
+                <div class="footerlogo"><a href="login.php">Login</a></div>
             </div>
     </div>
     <div align=center>This site is created by <a href='http://hakim.portfoliobox.me' target= "blank">Lubaka</a></div></body>
